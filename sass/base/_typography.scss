@@ -1,0 +1,136 @@
+/**** Définition de la police ****/
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+
+h1 {
+    font-family: 'Shrikhand', cursive;
+}
+
+body, button {
+    font-family: 'Roboto', sans-serif;
+}
+
+.header_location {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.title {
+    h2 {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28.13px;
+
+        @include desktop-only {
+            font-size: 40px;
+        }
+    }
+
+    h3 {
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 21.09px;
+        color: $Grey;
+    }
+
+    .button {
+        font-weight: 500;
+        font-size: 16px;
+    }
+}
+
+//fonctionement//
+
+.fonction h2 {
+    margin: 0;
+
+    @include tablet-only {
+        text-align: center;
+    }
+
+    @include desktop-only {
+        text-align: start;
+    }
+}
+
+.menu {
+    li {
+        font-weight: 500;
+        font-size: 16px;
+    }
+
+    span {
+        font-size: 14px;
+    }
+}
+//card
+.container_card {
+    h2 {
+        font-weight: 700;
+        font-size: 18px;
+    }
+
+    h3 {
+        font-weight: 300;
+        font-size: 17px;
+    }
+}
+//footer
+footer {
+    h1 {
+        font-weight: 400;
+        font-size: 18px;
+    }
+}
+
+// Pages des restaurant//
+
+.menu_food {
+    h1 {
+        font-weight: 400;
+        font-size: 28px;
+        font-style: italic;
+        margin: 0;
+
+        @include desktop-only {
+            text-align: center;
+        }
+    }
+
+    h3 {
+        width: 40px;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 20px;
+        margin: 0;
+        border-bottom: 3px solid $tertiary;
+    }
+
+    h2 {
+        font-weight: 500;
+        font-size: 18px;
+        margin: 0;
+    }
+
+    p {
+        font-weight: 300;
+        font-size: 15px;
+        margin: 0;
+    }
+}
+
+.price {
+    p {
+        font-weight: 700;
+        font-size: 15px;
+    }
+}
+
+.plate {
+    h2, p {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+}
